@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>腹黒コミュ力MBTI診断</title>
+  <meta name="description" content="あなたの裏のコミュ力、人間関係ではだいたいバレてます。4択でわかる笑える悪口系16タイプ診断。">
+  <meta property="og:title" content="腹黒コミュ力MBTI診断">
+  <meta property="og:description" content="あなたの裏のコミュ力、人間関係ではだいたいバレてます。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section id="intro" class="screen active">
+      <div class="hero">
+        <div class="hero-copy">
+          <h1>腹黒コミュ力<br>MBTI診断</h1>
+          <p class="lead">あなたの“裏のコミュ力”、人間関係ではだいたいバレてます。友達と見せ合うほど盛り上がる、ちょっと毒ありの16タイプ診断。</p>
+          <div class="cover-points">
+            <span>全12問</span>
+            <span>4択で完了</span>
+            <span>結果画像つき</span>
+          </div>
+          <p class="cover-hook">あなたは4つの腹黒グループのうち、どの裏キャラに分類される？</p>
+          <button id="startBtn" class="primary-btn">診断をはじめる</button>
+          <p class="note">全12問 / 4択 / ユーモア診断です</p>
+        </div>
+        <div class="hero-art">
+          <div class="cover-card main-card">
+            <img src="assets/characters/01-smiling-dictator.png" alt="笑顔の独裁者">
+            <strong>笑顔の独裁者</strong>
+          </div>
+          <div class="cover-card sub-card one">
+            <img src="assets/characters/15-distance-bug-menhera.png" alt="距離感バグメンヘラ">
+            <strong>距離感バグメンヘラ</strong>
+          </div>
+          <div class="cover-card sub-card two">
+            <img src="assets/characters/03-logic-moral-harassment-monster.png" alt="正論モラハラモンスター">
+            <strong>正論モラハラモンスター</strong>
+          </div>
+        </div>
+      </div>
+
+      <section class="type-showcase" aria-label="腹黒コミュ力MBTIの4グループ">
+        <div class="showcase-head">
+          <p class="eyebrow">4 Groups / 16 Characters</p>
+          <h2>あなたはどの腹黒グループ？</h2>
+          <p>16タイプの中から、あなたはどのキャラクターになるのか。結果を楽しみにしながら診断してみてください。</p>
+        </div>
+
+        <div class="group-grid">
+          <article class="type-group control-group">
+            <div class="group-title">
+              <span>支配司令塔</span>
+              <strong>場を握りたい裏の司令塔</strong>
+            </div>
+            <div class="mini-types">
+              <div><img src="assets/characters/01-smiling-dictator.png" alt="笑顔の独裁者"><span>笑顔の独裁者</span></div>
+              <div><img src="assets/characters/04-fake-good-controller.png" alt="偽善支配者"><span>偽善支配者</span></div>
+              <div><img src="assets/characters/08-shadow-ruler.png" alt="影の支配者"><span>影の支配者</span></div>
+              <div><img src="assets/characters/03-logic-moral-harassment-monster.png" alt="正論モラハラモンスター"><span>正論モラハラモンスター</span></div>
+            </div>
+          </article>
+
+          <article class="type-group approval-group">
+            <div class="group-title">
+              <span>愛され待ち</span>
+              <strong>見てほしい褒められ待ち族</strong>
+            </div>
+            <div class="mini-types">
+              <div><img src="assets/characters/02-humble-narcissist.png" alt="謙遜ナルシスト"><span>謙遜ナルシスト</span></div>
+              <div><img src="assets/characters/07-approval-zombie.png" alt="承認欲求ゾンビ"><span>承認欲求ゾンビ</span></div>
+              <div><img src="assets/characters/05-tragic-heroine.png" alt="悲劇のヒロイン"><span>悲劇のヒロイン</span></div>
+              <div><img src="assets/characters/10-mount-craftsman.png" alt="マウント職人"><span>マウント職人</span></div>
+            </div>
+          </article>
+
+          <article class="type-group defense-group">
+            <div class="group-title">
+              <span>防衛大臣</span>
+              <strong>傷つく前に逃げる平和顔</strong>
+            </div>
+            <div class="mini-types">
+              <div><img src="assets/characters/11-peace-escape-ninja.png" alt="事なかれ忍者"><span>事なかれ忍者</span></div>
+              <div><img src="assets/characters/06-air-reading-self-destruct.png" alt="空気読み自爆マン"><span>空気読み自爆マン</span></div>
+              <div><img src="assets/characters/14-people-pleaser-cyborg.png" alt="八方美人サイボーグ"><span>八方美人サイボーグ</span></div>
+              <div><img src="assets/characters/15-distance-bug-menhera.png" alt="距離感バグメンヘラ"><span>距離感バグメンヘラ</span></div>
+            </div>
+          </article>
+
+          <article class="type-group attack-group">
+            <div class="group-title">
+              <span>毒舌参謀</span>
+              <strong>正論・観察・圧で勝ちたい毒舌軍</strong>
+            </div>
+            <div class="mini-types">
+              <div><img src="assets/characters/12-advice-demon-king.png" alt="アドバイス魔王"><span>アドバイス魔王</span></div>
+              <div><img src="assets/characters/09-empathy-thief.png" alt="共感大泥棒"><span>共感大泥棒</span></div>
+              <div><img src="assets/characters/13-read-my-mind-king.png" alt="察してキング"><span>察してキング</span></div>
+              <div><img src="assets/characters/16-self-sacrifice-villain.png" alt="自己犠牲ヴィラン"><span>自己犠牲ヴィラン</span></div>
+            </div>
+          </article>
+        </div>
+        <div class="showcase-action">
+          <button class="primary-btn start-trigger">診断をはじめる</button>
+        </div>
+      </section>
+    </section>
+
+    <section id="quiz" class="screen">
+      <div class="quiz-head">
+        <p id="progressText" class="eyebrow">Q1 / 12</p>
+        <div class="progress"><span id="progressBar"></span></div>
+      </div>
+      <h2 id="questionText"></h2>
+      <div id="answers" class="answers"></div>
+    </section>
+
+    <section id="result" class="screen">
+      <article id="resultCard" class="result-card">
+        <p class="eyebrow">あなたの診断結果</p>
+        <h2 id="resultName"></h2>
+        <p id="resultCatch" class="catch"></p>
+        <div class="character-frame">
+          <img id="resultImage" src="" alt="">
+        </div>
+        <div class="result-body">
+          <section>
+            <h3>あなたの腹黒コミュ力</h3>
+            <p id="resultBody"></p>
+          </section>
+          <section>
+            <h3>周りからの見え方</h3>
+            <p id="resultView"></p>
+          </section>
+          <section>
+            <h3>やらかしポイント</h3>
+            <p id="resultRisk"></p>
+          </section>
+          <section>
+            <h3>ちょっとだけマシになる処方箋</h3>
+            <p id="resultTip"></p>
+          </section>
+        </div>
+        <section class="long-reading">
+          <h3>詳しい診断結果</h3>
+          <div id="longReading"></div>
+        </section>
+        <section class="compatibility">
+          <div class="compat-block good">
+            <div class="compat-head">
+              <span>GOOD</span>
+              <h3>相性がいいキャラ TOP3</h3>
+            </div>
+            <div id="goodCompatibility" class="compat-list"></div>
+          </div>
+          <div class="compat-block caution">
+            <div class="compat-head">
+              <span>CAUTION</span>
+              <h3>相性注意キャラ TOP3</h3>
+            </div>
+            <div id="badCompatibility" class="compat-list"></div>
+          </div>
+        </section>
+        <div id="deepDive" class="deep-dive"></div>
+      </article>
+
+      <div class="share-panel">
+        <button id="saveImageBtn" class="primary-btn">結果画像を保存</button>
+        <button id="shareXBtn" class="sub-btn">Xでシェア</button>
+        <button id="copyBtn" class="sub-btn">Threads/Instagram用にコピー</button>
+        <button id="retryBtn" class="ghost-btn">もう一回やる</button>
+      </div>
+
+      <section class="cta">
+        <p class="eyebrow">友達の輪を広げたい人へ</p>
+        <h2>20代半ば〜30代中心で、関東の交流会「TOMONOWA」を運営しています。</h2>
+        <p>この診断を作った作成者は、関東を中心に人とのつながりを広げる交流会「TOMONOWA」を運営しています。新しい友達を増やしたい人、仕事以外のつながりを作りたい人、気軽に話せるコミュニティを探している人は、ぜひ公式ページをご覧ください。開催予定や参加方法、イベントの雰囲気をまとめています。</p>
+        <div class="cta-actions">
+          <a id="officialPageLink" class="primary-btn" href="#" target="_blank" rel="noreferrer">TOMONOWA公式ページを見る</a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <canvas id="shareCanvas" width="1080" height="1080" aria-hidden="true"></canvas>
+  <script src="app.js"></script>
+</body>
+</html>
