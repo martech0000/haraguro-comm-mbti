@@ -136,7 +136,7 @@ const comboMap = {
 const results = [
   {
     name: "笑顔の独裁者",
-    image: "assets/characters/01-smiling-dictator.png",
+    image: "./characters/01-smiling-dictator.png?v=20260624b",
     catch: "やさしい顔で場をまとめながら、主導権だけはしっかり握る人。",
     body: "あなたは空気を読むのがうまいぶん、気づくと場の流れを自分の納得する方向に寄せています。強く言わない。だからこそ通る。周りは和やか、でもハンドルはあなたの手の中です。",
     view: "感じがよくて頼れる人。ただ近い人ほど「結局この人のペースになってる」と薄々気づいています。",
@@ -145,7 +145,7 @@ const results = [
   },
   {
     name: "謙遜ナルシスト",
-    image: "assets/characters/02-humble-narcissist.png",
+    image: "./characters/02-humble-narcissist.png?v=20260624b",
     catch: "「全然そんなことないです」の裏で、拍手の続きを待っている人。",
     body: "あなたは控えめに見せるのが上手です。でも本音では、自分の良さにちゃんと気づいてほしいタイプ。褒められると否定するけど、心の中では保存しています。",
     view: "謙虚でかわいい人。ただし褒め待ちの空気が出ると、勘のいい人にはバレます。",
@@ -154,7 +154,7 @@ const results = [
   },
   {
     name: "正論モラハラモンスター",
-    image: "assets/characters/03-logic-moral-harassment-monster.png",
+    image: "./characters/03-logic-moral-harassment-monster.png?v=20260624b",
     catch: "間違ったことは言ってないのに、相手の心だけきれいに折る人。",
     body: "あなたは物事の筋を見抜くのが得意です。だからこそ、曖昧さや甘えを見ると黙っていられない。正しいことを言っているのに、言い方で相手を逃げ場なしにしがちです。",
     view: "頭が切れる人。だけど疲れている人からは、ちょっと裁判所みたいに見えています。",
@@ -163,7 +163,7 @@ const results = [
   },
   {
     name: "偽善支配者",
-    image: "assets/characters/04-fake-good-controller.png",
+    image: "./characters/04-fake-good-controller.png?v=20260624b",
     catch: "親切の顔をして、相手の選択肢をじわっと減らす人。",
     body: "あなたは人のために動ける人です。ただ、その優しさの中に“こうしてほしい”が混ざりやすい。相手のためと言いながら、実は自分が安心できる形に整えています。",
     view: "面倒見がいい人。でもたまに、優しさの包囲網ができています。",
@@ -172,7 +172,7 @@ const results = [
   },
   {
     name: "悲劇のヒロイン",
-    image: "assets/characters/05-tragic-heroine.png",
+    image: "./characters/05-tragic-heroine.png?v=20260624b",
     catch: "つらさをただ抱えるだけじゃなく、少しだけ見つけてほしい人。",
     body: "あなたは傷ついたとき、平気なふりをしながらも気づいてほしいタイプ。悲しみを言葉にするのがうまく、気づいたら周りがあなたの物語に参加しています。",
     view: "繊細で放っておけない人。ただ、毎回スポットライトが当たると少し重く見えます。",
@@ -181,7 +181,7 @@ const results = [
   },
   {
     name: "空気読み自爆マン",
-    image: "assets/characters/06-air-reading-self-destruct.png",
+    image: "./characters/06-air-reading-self-destruct.png?v=20260624b",
     catch: "誰よりも空気を読んで、勝手に限界まで背負う人。",
     body: "あなたは場の違和感にすぐ気づきます。だから調整役になりがち。でも誰にも頼まれていないところまで背負って、最後に自分の中で爆発します。",
     view: "気が利く人。けれど周りからすると、急に限界が来るので少しびっくりされます。",
@@ -190,7 +190,7 @@ const results = [
   },
   {
     name: "承認欲求ゾンビ",
-    image: "assets/characters/07-approval-zombie.png",
+    image: "./characters/07-approval-zombie.png?v=20260624b",
     catch: "褒められないと、ちょっと心が成仏できない人。",
     body: "あなたは反応をもらえると一気に元気になります。見てほしい、認めてほしい、ちゃんと価値を感じてほしい。その欲があるから頑張れるけど、反応が薄いと急にしおれます。",
     view: "愛嬌があって伸びる人。ただ、いいねや評価の残量でテンションが変わりがちです。",
@@ -199,7 +199,7 @@ const results = [
   },
   {
     name: "影の支配者",
-    image: "assets/characters/08-shadow-ruler.png",
+    image: "./characters/08-shadow-ruler.png?v=20260624b",
     catch: "表では静か。裏では外堀がもう埋まっている人。",
     body: "あなたは正面突破より、流れ・人選・タイミングで勝つタイプ。大声を出さなくても、気づいたら状況があなたに有利になっています。",
     view: "落ち着いていて賢い人。でもあとから考えると、全部あなたの読み通りだった気がします。",
@@ -208,7 +208,7 @@ const results = [
   },
   {
     name: "共感大泥棒",
-    image: "assets/characters/09-empathy-thief.png",
+    image: "./characters/09-empathy-thief.png?v=20260624b",
     catch: "「わかる」で心を開かせて、情報だけしっかり持ち帰る人。",
     body: "あなたは聞き上手です。相手の温度に合わせるのがうまいので、つい本音を引き出してしまう。ただし、共感しながら内心かなり観察しています。",
     view: "話しやすくて安心する人。でも話したあとに、ちょっと手の内を見せすぎた気がされます。",
@@ -217,7 +217,7 @@ const results = [
   },
   {
     name: "マウント職人",
-    image: "assets/characters/10-mount-craftsman.png",
+    image: "./characters/10-mount-craftsman.png?v=20260624b",
     catch: "普通の会話に、うっすら優越感を混ぜる職人。",
     body: "あなたは自分の強みを見せるのがうまい人。露骨に自慢はしないけど、会話の端に“私そっち側じゃないんで”が乗ることがあります。",
     view: "自信があって魅力的。ただし聞く人によっては、地味に上からに感じます。",
@@ -226,7 +226,7 @@ const results = [
   },
   {
     name: "事なかれ忍者",
-    image: "assets/characters/11-peace-escape-ninja.png",
+    image: "./characters/11-peace-escape-ninja.png?v=20260624b",
     catch: "平和が好き。という名目で、大事な話から消える人。",
     body: "あなたは揉めごとが苦手です。空気が悪くなる前に身を引くのがうまい。でも本当に話すべき場面でも、煙のようにいなくなることがあります。",
     view: "穏やかで付き合いやすい人。ただ、肝心なときにいないと思われることも。",
@@ -235,7 +235,7 @@ const results = [
   },
   {
     name: "アドバイス魔王",
-    image: "assets/characters/12-advice-demon-king.png",
+    image: "./characters/12-advice-demon-king.png?v=20260624b",
     catch: "相談された瞬間、玉座から解決策を投げる人。",
     body: "あなたは面倒見がよく、改善点もすぐ見えるタイプ。だから相手がただ聞いてほしいだけの時も、つい助言モードに入ります。",
     view: "頼れる人。でも弱っている人には、少し上からに感じられることがあります。",
@@ -244,7 +244,7 @@ const results = [
   },
   {
     name: "察してキング",
-    image: "assets/characters/13-read-my-mind-king.png",
+    image: "./characters/13-read-my-mind-king.png?v=20260624b",
     catch: "言わない。でもわかってくれないと不機嫌になる王様。",
     body: "あなたは自分の気持ちを全部説明するのが少し苦手です。その代わり、近い人には察してほしい。わかってくれたら最高、外されたら静かに拗ねます。",
     view: "奥ゆかしく見える人。でもたまに、解答欄のないテストを配ってきます。",
@@ -253,7 +253,7 @@ const results = [
   },
   {
     name: "八方美人サイボーグ",
-    image: "assets/characters/14-people-pleaser-cyborg.png",
+    image: "./characters/14-people-pleaser-cyborg.png?v=20260624b",
     catch: "誰にでも感じがいい。でも本音の電源は省エネモードの人。",
     body: "あなたは相手に合わせる精度が高いタイプ。場ごとに表情も言葉も調整できるので、かなり器用です。ただ、合わせすぎて自分の本音がどこかへ行きがちです。",
     view: "誰とでもうまくやれる人。でも深く知ろうとすると、少し壁を感じられます。",
@@ -262,7 +262,7 @@ const results = [
   },
   {
     name: "距離感バグメンヘラ",
-    image: "assets/characters/15-distance-bug-menhera.png",
+    image: "./characters/15-distance-bug-menhera.png?v=20260624b",
     catch: "仲良くなる速度だけ、なぜか高速通信の人。",
     body: "あなたは好きになった人や楽しい場に、一気に距離を詰めたくなるタイプ。熱量があるから魅力的。でも相手の温度を見る前に近づきすぎることがあります。",
     view: "愛情深くてノリがいい人。ただ、相手によっては通知が鳴り止まない感じに見えます。",
@@ -271,7 +271,7 @@ const results = [
   },
   {
     name: "自己犠牲ヴィラン",
-    image: "assets/characters/16-self-sacrifice-villain.png",
+    image: "./characters/16-self-sacrifice-villain.png?v=20260624b",
     catch: "「私が我慢すればいい」で、相手に罪悪感を残す人。",
     body: "あなたは本当に人のために動けます。ただ、我慢を積みすぎると、優しさが静かな圧になります。何も求めていない顔で、実は気づいてほしいタイプです。",
     view: "健気でやさしい人。でも近い人ほど、申し訳なさで動けなくなることがあります。",
@@ -906,3 +906,4 @@ function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
   }
   ctx.fillText(line, x, y);
 }
+

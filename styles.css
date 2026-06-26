@@ -30,20 +30,21 @@ button, a {
 }
 
 .app {
-  width: min(980px, 100%);
+  width: min(1180px, 100%);
   margin: 0 auto;
-  padding: 18px;
+  padding: 28px;
 }
 
 .screen { display: none; }
 .screen.active { display: block; }
 
 .hero {
-  min-height: calc(100vh - 36px);
+  min-height: auto;
   display: grid;
-  grid-template-columns: 1fr 420px;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 520px);
   align-items: center;
-  gap: 28px;
+  gap: 48px;
+  padding: 56px 0 38px;
 }
 
 .eyebrow {
@@ -58,16 +59,16 @@ h1, h2, h3, p { letter-spacing: 0; }
 
 h1 {
   margin: 0;
-  font-size: clamp(46px, 8vw, 86px);
+  font-size: clamp(58px, 8vw, 104px);
   line-height: .96;
   font-weight: 1000;
 }
 
 .lead {
   margin: 18px 0 24px;
-  max-width: 520px;
+  max-width: 640px;
   color: var(--muted);
-  font-size: 19px;
+  font-size: 21px;
   line-height: 1.75;
   font-weight: 700;
 }
@@ -82,7 +83,7 @@ h1 {
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 420px;
+  min-height: 500px;
 }
 
 .hero-art::before {
@@ -154,14 +155,14 @@ h1 {
 }
 
 .main-card {
-  width: 300px;
+  width: 350px;
   transform: rotate(-2deg);
   z-index: 2;
 }
 
 .sub-card {
   position: absolute;
-  width: 178px;
+  width: 210px;
   z-index: 3;
 }
 
@@ -178,8 +179,8 @@ h1 {
 }
 
 .type-showcase {
-  margin: -18px 0 28px;
-  padding: 28px 0 0;
+  margin: 12px 0 28px;
+  padding: 18px 0 0;
 }
 
 .showcase-head {
@@ -282,8 +283,8 @@ h1 {
   display: grid;
   grid-template-rows: 1fr auto;
   min-width: 0;
-  min-height: 150px;
-  padding: 8px 6px;
+  min-height: 178px;
+  padding: 10px 8px;
   border: 1px solid rgba(32, 23, 26, .18);
   border-radius: 8px;
   background: rgba(255, 255, 255, .76);
@@ -292,7 +293,7 @@ h1 {
 .mini-types img {
   align-self: end;
   width: 100%;
-  height: 102px;
+  height: 122px;
   object-fit: contain;
   filter: drop-shadow(0 8px 10px rgba(32, 23, 26, .16));
 }
@@ -730,11 +731,11 @@ h1 {
   .mini-types { gap: 6px; }
 
   .mini-types div {
-    min-height: 124px;
-    padding: 6px 4px;
+    min-height: 142px;
+    padding: 8px 4px;
   }
 
-  .mini-types img { height: 78px; }
+  .mini-types img { height: 92px; }
 
   .mini-types span {
     min-height: 32px;
