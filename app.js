@@ -678,7 +678,9 @@ document.querySelectorAll(".start-trigger").forEach((button) => {
 });
 document.getElementById("retryBtn").addEventListener("click", startQuiz);
 document.getElementById("shareXBtn").addEventListener("click", shareX);
+document.getElementById("shareThreadsBtn").addEventListener("click", shareThreads);
 document.getElementById("copyBtn").addEventListener("click", copyShareText);
+document.getElementById("nativeShareBtn").addEventListener("click", nativeShare);
 document.getElementById("saveImageBtn").addEventListener("click", saveResultImage);
 
 function startQuiz() {
@@ -813,20 +815,59 @@ function renderDeepDive(name) {
 function shareText() {
   const good = compatibility[currentResult.name]?.goodTop3?.[0]?.[0] ?? "";
   const caution = compatibility[currentResult.name]?.badTop3?.[0]?.[0] ?? "";
-  return `腹黒コミュ力MBTI診断やったら「${currentResult.name}」だった。\n\n${currentResult.catch}\n\n相性いい人：${good}\n相性注意：${caution}\n\nいや、心当たりありすぎて無理。\n#腹黒コミュ力MBTI\n${SITE_URL}`;
+  return `腹黒コミュ力MBTI診断やったら「${currentResult.name}」だった。\n\n${currentResult.catch}\n\n相性いい人：${good}\n相性注意：${caution}\n\nいや、心当たりありすぎて無理。\n#腹黒コミュ力MBTI`;
+}
+
+function resultUrl() {
+  return `${SITE_URL}?type=${encodeURIComponent(currentResult.name)}`;
+}
+
+function shareTextWithUrl() {
+  return `${shareText()}\n${resultUrl()}`;
 }
 
 function shareX() {
   const text = encodeURIComponent(shareText());
-  window.open(`https://twitter.com/intent/tweet?text=${text}`, "_blank", "noopener,noreferrer");
+  const url = encodeURIComponent(resultUrl());
+  window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, "_blank", "noopener,noreferrer");
+  showShareStatus("Xの投稿画面を開きました");
+}
+
+function shareThreads() {
+  const text = encodeURIComponent(shareTextWithUrl());
+  window.open(`https://www.threads.net/intent/post?text=${text}`, "_blank", "noopener,noreferrer");
+  showShareStatus("Threadsの投稿画面を開きました");
 }
 
 async function copyShareText() {
-  await navigator.clipboard.writeText(shareText());
+  await navigator.clipboard.writeText(shareTextWithUrl());
   const button = document.getElementById("copyBtn");
   const old = button.textContent;
   button.textContent = "コピーしました";
+  showShareStatus("結果名と診断リンクをコピーしました。Instagramやストーリーズにも貼れます。");
   setTimeout(() => { button.textContent = old; }, 1400);
+}
+
+async function nativeShare() {
+  const text = shareText();
+  const url = resultUrl();
+  if (navigator.share) {
+    await navigator.share({ title: "腹黒コミュ力MBTI診断", text, url });
+    showShareStatus("共有画面を開きました");
+    return;
+  }
+  await navigator.clipboard.writeText(`${text}\n${url}`);
+  showShareStatus("この端末では共有画面を開けないため、結果とリンクをコピーしました");
+}
+
+function showShareStatus(message) {
+  const status = document.getElementById("shareStatus");
+  status.textContent = message;
+  status.classList.add("active");
+  clearTimeout(showShareStatus.timer);
+  showShareStatus.timer = setTimeout(() => {
+    status.classList.remove("active");
+  }, 3200);
 }
 
 async function saveResultImage() {
@@ -870,6 +911,7 @@ async function saveResultImage() {
   link.download = `haraguro-mbti-${currentResult.name}.png`;
   link.href = canvas.toDataURL("image/png");
   link.click();
+  showShareStatus("画像を保存しました。保存先はブラウザのダウンロード設定に従います。");
 }
 
 function loadImage(src) {

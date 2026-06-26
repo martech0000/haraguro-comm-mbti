@@ -11,7 +11,7 @@
   <meta property="og:description" content="あなたの裏のコミュ力、人間関係ではだいたいバレてます。">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="./styles.css?v=20260624c">
+  <link rel="stylesheet" href="./styles.css?v=20260626a">
 </head>
 <body>
   <main class="app">
@@ -170,11 +170,14 @@
       </article>
 
       <div class="share-panel">
-        <button id="saveImageBtn" class="primary-btn">結果画像を保存</button>
+        <button id="shareThreadsBtn" class="primary-btn">Threadsでシェア</button>
         <button id="shareXBtn" class="sub-btn">Xでシェア</button>
-        <button id="copyBtn" class="sub-btn">Threads/Instagram用にコピー</button>
+        <button id="copyBtn" class="sub-btn">結果とリンクをコピー</button>
+        <button id="nativeShareBtn" class="sub-btn">スマホで共有</button>
+        <button id="saveImageBtn" class="ghost-btn">結果画像を保存</button>
         <button id="retryBtn" class="ghost-btn">もう一回やる</button>
       </div>
+      <p id="shareStatus" class="share-status" aria-live="polite"></p>
 
       <section class="cta">
         <p class="eyebrow">友達の輪を広げたい人へ</p>
@@ -188,7 +191,7 @@
   </main>
 
   <canvas id="shareCanvas" width="1080" height="1080" aria-hidden="true"></canvas>
-  <script src="./app.js?v=20260624c"></script>
+  <script src="./app.js?v=20260626a"></script>
 </body>
 </html>
 

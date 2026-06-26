@@ -662,6 +662,22 @@ h1 {
   margin: 16px 0 28px;
 }
 
+.share-status {
+  min-height: 26px;
+  margin: -12px auto 26px;
+  color: var(--accent);
+  font-weight: 800;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity .18s ease, transform .18s ease;
+}
+
+.share-status.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .cta {
   margin: 0 0 28px;
   padding: 22px;
