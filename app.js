@@ -1,4 +1,4 @@
-const TOMONOWA_OFFICIAL_URL = "#";
+const TOMONOWA_OFFICIAL_URL = "https://www.instagram.com/tomono_wa/";
 const SITE_URL = location.href.split("#")[0];
 
 const axes = ["control", "approval", "defense", "attack"];
